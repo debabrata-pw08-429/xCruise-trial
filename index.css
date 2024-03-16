@@ -242,74 +242,34 @@ a,
 /* ---------------------------------------------  CONTACT - SECTION  -----------------------------------> */
 
 #contact {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 90px;
+  margin: 90px auto 120px auto;
+  text-align: center;
 }
 
 #contact > h1 {
-  width: 20%;
-  margin: 30px auto;
-}
-
-#contact > div {
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#contact span {
-  font-weight: 600;
-}
-
-.contact_date {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
-}
-
-.contact_date > input {
-  width: 100%;
-}
-
-#contact_form {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-  padding: 25px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background-color: #fff;
-  border-radius: 8px;
-}
-
-#contact_form input,
-textarea {
-  padding: 12px 16px;
-}
-
-#contact_form button {
-  padding: 12px 16px;
-  color: #fff;
-  background-color: orange;
-}
-
-#contact_form button:hover {
-  background-color: black;
+  width: fit-content;
+  margin: 50px auto;
+  border-bottom: 5px solid orange;
+  padding: 8px;
 }
 
 .contact_info {
-  width: 30%;
+  width: 90%;
+  margin: auto;
   font-size: larger;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: space-evenly;
   gap: 25px;
 }
 
-.contact_info > h1 {
-  border-left: 5px solid orange;
+.contact_info > div {
+  width: 100%;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+.contact_info h4 {
   padding: 8px;
 }
 
@@ -463,28 +423,8 @@ textarea {
     font-size: 12px;
   }
 
-  #contact {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-  }
-
-  .contact_info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .contact_info > h1 {
-    width: fit-content;
-    margin: auto;
-    border-left: none;
-    border-bottom: 5px solid orange;
-    padding-left: 8px;
-  }
-
   .contact_info h4 {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 
@@ -517,11 +457,11 @@ textarea {
     justify-content: center;
   }
 
-  #contact {
+  .contact_info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
   }
 }
 
@@ -593,14 +533,10 @@ textarea {
     justify-content: center;
   }
 
-  #contact {
+  .contact_info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
-  }
-
-  #contact_form {
-    width: 80%;
+    gap: 25px;
   }
 }
